@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>阳光好车 - 首页</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+	<script src='js/jquery-1.8.0.min.js'></script>
+	<link rel="stylesheet" href="css/index.css">
+	<meta name="renderer" content="webkit">
+<script src='js/Address.js'></script> <!-- 城市级联 -->
+	<!-- 提示用户升级 -->
+<!--[if lte IE 10]>
+<script>window.location.href='http://browsehappy.osfipin.com?referrer='+location.href;</script>
+<![endif]-->
+<style>
+	#tel_tip{color:red;text-align:center;}
+</style>
+
+</head>
+<body>
+<!-- 最顶部隐藏起来可以滑动的log、和search -->
+<div id='hide_log_search'>
+	<div class="hide_log_search">
+		<div class="logo"><a href="index.html" ><img src="img/log.png" alt=""></a></div>
+		<ul class='nav'>
+			<a href="index.html">首页</a>
+			<a href="buy_car.html">我要买车</a>
+			<a href="sell_car.html">我要卖车</a>
+			<a href="sun_renz.html">阳光认证</a>
+<a href="sun_Partner.html">连锁合伙人</a>
+		</ul>
+		<div class="search">
+			<input type="text" placeholder="搜索您想要的车">
+			<a href="buy_car.html">搜索</a>
+		</div>
+	</div>
+</div>
+	<!-- id = hide_log_search结束 -->
+	<div class="top">
+		<div class="top_cen">
+			<p>全国统一客服热线：400-877-9288</p>
+			<ul>
+				<a href="#xiazaiapp">手机APP下载</a>
+				<span>|</span>
+				<a href="buy_car.html" id='denglu'>登录</a>
+				<span>|</span>
+				  <a href="buy_car.html" id='zhuce'>注册</a>		
+			</ul>
+		</div>		
+	</div>
+	<div class="logo_search">
+		<div class="logo_search_cen">
+			<div class="logo">
+				<a href="index.html"><img src="img/log.png" width='240'></a>
+			</div>	
+			<!-- <div class="city">
+				<span>北京</span>
+				<i>切换城市</i>
+				<b class='sanjiao'></b>
+			</div> -->
+			<div class="search">
+					<input type="text" placeholder="搜索您想要的车">
+					<a href="buy_car.html">搜索</a>
+			</div>
+			<div class="telephone">
+				<span><img src="img/tel.png"><i>400-877-9288</i></span>
+			</div>
+	
+		</div>
+	</div>
+	<!-- logo_search结束 -->
+
+	<div class="content">
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">首页</a><span></span><b class='show'></b></li>
+				<li><a href="buy_car.html">我要买车</a><span></span></li>
+				<li><a href="sell_car.html">我要卖车</a><span></span></li>
+				<li><a href="sun_renz.html">阳光认证</a><span></span></li>
+<li><a href="sun_Partner.html">连锁合伙人</a><span></span></li>
+			</ul>
+		</div>
+		<!-- menu 结束 -->
+		<div class="list_banner">
+			<div class="list_left">
+				<h3 class='my_sell_car'>我要卖车</h3>
+				<ul>
+					<li class='pinpai'>
+						<p><span>品牌</span> <img src="img/list.jpg"></p>
+						<a href="buy_car.html">大众</a>
+						<a href="buy_car.html">宝马</a>
+						<a href="buy_car.html">奥迪</a>
+						<a href="buy_car.html">丰田</a>
+						<a href="buy_car.html">日产</a>
+						<a href="buy_car.html">奔驰</a>
+						<a href="buy_car.html">本田</a>
+						<a href="buy_car.html">别克</a>
+						<a href="buy_car.html">福特</a>
+						<div class="hides">
+							<a class='kuai'></a>
+							<div class="A">
+								<ul>
+									<span>A</span>
+									<a href="buy_car.html">Alpina</a>		
+									<a href="buy_car.html">阿斯顿马丁</a>
+									<a href="buy_car.html">奥迪</a>
+								</ul>
+							</div>
+							<div class="B">
+								<ul>
+									<span>B</span>	
+									<a href="buy_car.html">巴博斯</a>|
+									<a href="buy_car.html">宝骏</a>|
+									<a href="buy_car.html">宝马</a>|
+									<a href="buy_car.html">保时捷</a>|
+									<a href="buy_car.html">北京</a>|
+									<a href="buy_car.html">北汽</a>|
+									<a href="buy_car.html">奔驰</a>
+								</ul>
+								<ul class="ul_bot">
+									<a href="buy_car.html">奔腾</a>|
+									<a href="buy_car.html">别克</a>|
+									<a href="buy_car.html">宾利</a>|
+									<a href="buy_car.html">宝沃</a>
+								</ul>
+							</div>
+							<div class="C">
+								<ul>
+									<span>C</span>
+									<a href="buy_car.html">昌河</a>|
+									<a href="buy_car.html">传祺</a>|
+									<a href="buy_car.html">长安</a>|
+									<a href="buy_car.html">长安商用</a>|
+									<a href="buy_car.html">长城</a>|
+									<a href="buy_car.html">长丰</a>
+								</ul>
+							</div>
+							<div class="D">
+								<ul>
+									<span>D</span>
+									<a href="buy_car.html">大发</a>|
+									<a href="buy_car.html">大通</a>|
+									<a href="buy_car.html">大众</a>|
+									<a href="buy_car.html">道奇</a>|
+									<a href="buy_car.html">帝豪</a>|
+									<a href="buy_car.html">东风</a>|
+									<a href="buy_car.html">东风风度</a>|
+									<a href="buy_car.html">东风小康</a>|
+									<a href="buy_car.html">东南</a>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class='price'>
+						<p>价格</p>
+						<a href="buy_car.html">5万以下</a>
+						<a href="buy_car.html">5-10万</a>
+						<a href="buy_car.html">10-15万</a>
+						<a href="buy_car.html">15-20万</a>
+						<a href="buy_car.html">20-25万</a>
+						<a href="buy_car.html">25-40万</a>
+						<a href="buy_car.html">40万以上</a>
+					</li>
+					<li class='car_models'>
+						<p>车型</p>
+						<a href="buy_car.html">SUV</a>
+						<a href="buy_car.html">商务车</a>
+						<a href="buy_car.html">跑车</a>
+						<a href="buy_car.html">急售</a>
+						<a href="buy_car.html">准新车</a>&nbsp;&nbsp;&nbsp;
+						<a href="buy_car.html">超值</a>
+						<a href="buy_car.html">直销车</a>
+					</li>
+				</ul>
+				<div class="my_buy_car"  id="ocheck">
+					<h3>我要买车</h3>
+					<input type="text" class="oChphone" placeholder="请输入手机号码"><div id="tel_tip" type="text" ></div>
+					<a href="buy_car.html">我要买车</a>			
+				</div>
+			</div>
+			<div class="right_banner">
+				<div class="banner_map">
+					<ul>
+						<a href="#" class='a_1'><img src="img/1.jpg" alt=""></a>	
+						<a href="#"><img src="img/2.jpg" alt=""></a>	
+						<a href="#"><img src="img/3.jpg" alt=""></a>	
+						<a href="#"><img src="img/4.jpg" alt=""></a>	
+					</ul>
+					<dl>
+						<dd class='dded'></dd>
+						<dd></dd>
+						<dd></dd>
+						<dd></dd>
+					</dl>
+					<span class='prev'><img src="img/prev.png" alt=""></span>
+					<span class='next'><img src="img/next.png" alt=""></span>
+				</div>
+				<!-- banner_map结束 -->
+	
+				<!-- 轮播图下面的宣传、承诺 -->
+				<div class="pro">
+					<ul>
+						<li class='li1'>
+							<span></span><b class='rota'></b>
+							<p>一年/两万公里质保</p>
+						</li>
+						<li class='li2'>
+							<span></span><b class='rota'></b>
+							<p>全面检测</p>
+						</li>
+						<li class='li3'>
+							<span></span><b class='rota'></b>
+							<p>14天可退</p>
+						</li>
+						<li class='li4'>
+							<span></span><b class='rota'></b>
+							<p>100%个人车源</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<!-- right_banner结束 -->
+		</div>
+		<!-- list_banner 结束 -->
+
+		<!-- 阳光特色 -->
+		<div class="tese">
+			<div class="tese_left">
+				<a href="buy_car.html"><img src="img/sun_banner.jpg" alt=""></a>
+			</div>
+			<div class="tese_right">
+				<div class="tese_right_l">
+					<a href="buy_car.html" class='a1'>
+						<dl>
+							<dt>实用代步车</dt>
+							<dd>驾驭想象 聆听声音</dd>
+						</dl>
+						<div class="img_box">
+							<img src="img/car1.jpg" alt="">
+						</div>
+					</a>
+					<div class="tese_right_l_bottom">
+						<a class="a2" href='buy_car.html'>
+							<dl>
+								<dt>奥迪车库</dt>
+								<dd>奥迪——Audi</dd>
+							</dl>
+							<div class="img_box">
+								<img src="img/201601221432247622.jpg" alt="">
+							</div>
+						</a>	
+						<a class="a3" href='buy_car.html'>
+							<dl>
+								<dt>大众车库</dt>
+								<dd>大众——Volkswagen</dd>
+							</dl>
+							<div class="img_box">
+								<img src="img/201601221219156607.jpg" alt="">
+							</div>
+						</a>
+					</div>	
+				</div>	
+				<div class="tese_right_r">
+					<a href="buy_car.html" class="a4">
+						<dl>
+							<dt>5-8万能买啥</dt>
+							<dd>驾有所值，动气强劲</dd>
+						</dl>
+						<div class="img_box">
+							<img src="img/201601221218531455.jpg">
+						</div>
+					</a>
+					<a href="buy_car.html" class="a5">
+						<dl>
+							<dt>12-16万能买啥</dt>
+							<dd>风范，与自由同行</dd>
+						</dl>
+						<div class="img_box">
+							<img src="img/201601221218599350.jpg"">
+						</div>
+					</a>
+					<a href="buy_car.html" class="a6">
+						<dl>
+							<dt>岂止于大</dt>
+							<dd>我所钟爱的7座SUV</dd>
+						</dl>
+						<div class="img_box">
+							<img src="img/201601221219239104.jpg">
+						</div>
+					</a>
+				</div>		
+			</div>
+		</div>
+
+		<!-- 特色 2 -->
+		<div class="tese2">
+			<div class="nav">
+				<ul>
+					<li href="buy_car.html" class='active'>热卖好车</li>
+					<li href="buy_car.html">最新上架</li>
+					<li href="buy_car.html">降价急售</li>
+					<li href="buy_car.html">准新车</li>
+					<li href="buy_car.html">SUV</li>
+				</ul>
+				<a href="buy_car.html" class="more">查看全部&gt;&gt;</a>
+			</div>
+			<div class="tese2_left">
+				<h1 class='title'>我要加盟</h1>
+					<form  action="">
+						<ul  id="ocheck" >
+							<li><input type="text" class="oChxm" placeholder='请填写您的姓名'><div class="" type="text"></div></li>
+							<li><input type="text" class="oChphone"  placeholder='请填写您的手机号'><div class="" type="text"></div></li>
+							<li class='yanzhengma'>
+								<input type="text" placeholder="请输入短信验证码">
+								<a href="buy_car.html">发送短信</a>
+							</li>
+							<li class="select">
+								<select name="location_p" id="location_p">
+								<option value="选择省">--- 选择省 ---</option></select>
+							    <select name="location_c" id="location_c">
+							    <option value="选择市">--- 选择市 ---</option></select>
+								<!--<span id=''>-请选择省-</span>
+								<span id=''>-请选择市-</span> -->
+							</li>
+							<li><input type="text" class="oChmail email" placeholder="电子邮箱"><div class="" type="text" ></div></li>		
+							<li><textarea placeholder="留言"></textarea></li>
+							<li><input type="submit" value='提交' class="oCheckSbumit submit"><div class="" type="text" ></div></li>
+						</ul>
+					</form>
+			</div>
+			<div class="tese2_right tese2_right2">
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c0.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c2.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+					
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c3.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c4.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>	
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c5.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c6.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+			</div>
+			<div class="tese2_right">
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c0.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c7.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+					
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c2.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c8.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>	
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c9.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c10.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+			</div>
+			<div class="tese2_right">
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c0.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c2.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+					
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c3.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c8.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>	
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/carimg.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c5.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+			</div>
+			<div class="tese2_right">
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c2.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+			</div>
+			<div class="tese2_right">
+				<div class='list'>
+					<a href="buy_car.html" class='img_box'><img src="img/c7.jpg" alt=""></a>
+					<h3 class='name'><a href="buy_car.html">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+			</div>
+		</div>
+		<!-- 阳光新闻 -->
+		<div class="SunNews">
+			<div class="sunnews_left">
+				<div class='title'>
+					<span>阳光视频</span>
+					<ul>
+						<a href="buy_car.html" class="prev"></a>
+						<div><li class='active2'></li>	<li></li>	<li></li>	</div>	
+						<a href="buy_car.html" class="next"></a>
+					</ul>
+				</div>
+				<div class='list first'>
+					<dl>
+						<dt><a href="buy_car.html"><img src="img/car2.jpg" alt=""></a></dt>
+						<h3>阳光好车品牌战略发布会精彩回顾 </h3>
+						<p>	阳光好车品牌战略发布会精彩回顾...</p>
+						<a href="buy_car.html" class='more'>点击播放</a>	
+					</dl>
+					
+					<dl>
+						<dt><a href="buy_car.html"><img src="img/car2.jpg" alt=""></a></dt>
+						<h3>车世界新闻报道-2017阳光好... </h3>
+						<p>2017年4月15日，“创新经营 共享经济”阳光好...</p>
+						<a href="buy_car.html" class='more'>点击播放</a>	
+					</dl>
+				</div>
+				<div class='list'>
+					<dl>
+						<dt><a href="buy_car.html"><img src="img/car2.jpg" alt=""></a></dt>
+						<h3>车世界新闻报道-2017阳光好...</h3>
+						<p>	阳光好车品牌战略发布会精彩回顾...</p>
+						<a href="buy_car.html" class='more'>点击播放</a>	
+					</dl>
+					
+					<dl>
+						<dt><a href="buy_car.html"><img src="img/car2.jpg" alt=""></a></dt>
+						<h3>阳光绽放 一切从这里出发 </h3>
+						<p>	梦想不分渺小和伟大所有的一切从这里出发...</p>
+						<a href="buy_car.html" class='more'>点击播放</a>	
+					</dl>
+				</div>
+				<div class='list'>
+					<dl>
+						<dt><a href="buy_car.html"><img src="img/car2.jpg" alt=""></a></dt>
+						<h3>车世界新闻报道-2017阳光好... </h3>
+						<p>2017年4月15日，“创新经营 共享经济”阳光好...</p>
+						<a href="buy_car.html" class='more'>点击播放</a>	
+					</dl>
+					
+					<dl>
+						<dt><a href="buy_car.html"><img src="img/car2.jpg" alt=""></a></dt>
+						<h3>阳光好车品牌战略发布会精彩回顾 </h3>
+						<p>	阳光好车品牌战略发布会精彩回顾...</p>
+						<a href="buy_car.html" class='more'>点击播放</a>	
+					</dl>
+				</div>
+			</div>
+			<div class="sunnews_right">
+				<div class='title'>
+					<span>阳光资讯</span>
+					<a href="about_ygzx.html">更多</a>	
+				</div>
+				<ul>
+					<li><a href="buy_car.html"> 阳光易贷网贷10月份月报 </a><span>2017-07-20 17:43<span></li>
+					<li><a href="buy_car.html">  阳光易贷网贷9月份月报  </a><span>2017-07-19 09:12<span></li>
+					<li><a href="buy_car.html">  关于2016年国庆节放假工作安...  </a><span>2017-07-18 17:53<span></li>
+					<li><a href="buy_car.html">  关于2016年国庆节放假工作安...  </a><span>2017-07-18 11:16<span></li>
+					<li><a href="buy_car.html">  关于2016年国庆节放假工作安...  </a><span>2017-07-17 09:57<span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<!-- content主体内容结束 -->
+
+		<!-- 页面底部内容 -->
+		
+				<!-- 售后 和 客服 -->
+		<div class="page_ending">
+			<div class="page_end_center">
+				<div class="shouhou">
+					<dl>
+						<dt>交易帮助</dt>
+						<dd><a href="about_buy_car_bz.html">买车帮助</a></dd>
+						<dd><a href="about_sell_car_bz.html">卖车帮助</a></dd>
+						<dd><a href="about_ghbz.html">过户帮助</a></dd>
+					</dl>
+					<dl>
+						<dt>关于我们</dt>
+						<dd><a href="about_gsjs.html">公司介绍</a></dd>
+						<dd><a href="about_qywh.html">企业文化</a></dd>
+						<dd><a href="about_gszz.html">公司资质</a></dd>
+					</dl>
+					<dl>
+						<dt>联系我们</dt>
+						<dd><a href="about_gfwx.html">官方微信</a></dd>
+						<dd><a href="http://weibo.com/p/1006066089613432/home?from=page_100606&mod=TAB&is_all=1#place">官方微博</a></dd>
+						<dd><a href="about_lxwm.html">联系我们</a></dd>
+					</dl>
+					<dl class='gf_app'>
+						<dd>下载官方APP</dd>
+						<dt id='xiazaiapp'><img src="img/snncarApp.png" alt=""></dt>
+					</dl>	
+					<dl class='gf_wx'>
+						<dd>关注官方微信</dd>
+						<dt><img src="img/gf_wx.jpg" alt=""></dt>
+					</dl>
+				</div>
+				<div class="kefu">
+					<p class='tel'>400-877-9288</p>
+					<p class="time">周一至周日 8:00-18:00</p>
+					<p>免费咨询(咨询、建议、投诉)</p>
+					<a href="buy_car.html">在线客服</a>
+				</div>
+			</div>
+			<!-- page_end_center 结束 -->
+		</div>
+			<!-- page_ending 结束 -->
+		<div class="footer">
+				Copyright © 2016-2017, snncar.com,All Rights Reserved 皖ICP备16022456号-1
+		</div>
+		<!-- 页面底部内容结束 -->
+	
+
+
+		<!-- 整个页面的大罩子 -->
+		<div id="cover"></div>
+		<!-- 登录注册的小框框 -->
+		<div id="login_register_box">
+			<ul>
+				<li class='login sele'>会员登录</li>
+				<li class='register'>会员注册</li>
+				<span class='close'>关闭</span>
+			</ul>
+					<!-- 账号登录框 -->
+			<div class="input_box login_box">
+				<form action="">
+					<div class="tel"><span>用户名<br/>(手机号)</span><input type="text" placeholder="请输入您的号码"></div>
+					<div class="password"><span>密码</span><input type="text" placeholder="请输入密码"></div>
+					<p><a href="buy_car.html">忘记登录密码?</a></p>
+						<input type="submit" value='登&nbsp;&nbsp;录'>
+				</form>
+			</div>
+					<!-- 账号注册框 -->
+			<div class="input_box register_box">
+				<form action="">
+					<p><input type="text" placeholder="手机账号(登录账号)"></p>
+					<div class='pic_yanzhengma'>
+						<input type="text" placeholder="请输入图片验证码">
+						<div class="img_box"><img src="img/code.png" alt=""></div>
+					</div>
+					<div class="get_yanzhengma">
+						<input type="text" placeholder="请输入验证码">
+						<span>获取验证码</span>
+					</div>
+					<p class='nicheng'><input type="text" placeholder="请输入昵称"></p>
+					<p><input type="text" placeholder="输入密码(六位字符)"></p>
+					<p><input type="submit" value="立即注册"></p>
+				</form>
+			</div>
+		</div>
+
+
+<script src='js/index.js'></script>		<!-- 页面js文件 -->
+<script src="js/select.js"></script>	<!-- 城市选择 -->
+  <script src='js/ocheck.js'></script> <!-- 表单验证 -->
+<script src='js/about.js'></script>
+
+<!-- 省市联动插件 -->
+ <script type="text/javascript">
+		new PCAS('location_p', 'location_c', 'location_a', '广东省', '', '');
+	</script>
+
+
+
+</body>
+</html>

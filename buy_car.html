@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我要买车</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+	<script src='js/jquery-1.8.0.min.js'></script>
+	<link rel="stylesheet" href="css/index.css">
+	<script src='js/list.js'></script>
+	
+	<!-- 提示用户升级 -->
+<!--[if lte IE 10]>
+<script>window.location.href='http://browsehappy.osfipin.com?referrer='+location.href;</script>
+<![endif]-->
+</head>
+<body>
+<!-- 最顶部隐藏起来可以滑动的log、和search -->
+<div id='hide_log_search'>
+	<div class="hide_log_search">
+		<div class="logo"><a href="index.html" ><img src="img/log.png" alt=""></a></div>
+		<ul class='nav'>
+			<a href="index.html">首页</a>
+			<a href="buy_car.html">我要买车</a>
+			<a href="sell_car.html">我要卖车</a>
+			<a href="sun_renz.html">阳光认证</a>
+<a href="sun_Partner.html">连锁合伙人</a>
+		</ul>
+		<div class="search">
+			<input type="text" placeholder="搜索您想要的车">
+			<a href="###">搜索</a>
+		</div>
+	</div>
+</div>
+	<!-- id = hide_log_search结束 -->
+	<div class="top">
+		<div class="top_cen">
+			<p>全国统一客服热线：400-877-9288</p>
+			<ul>
+				<a href="#xiazaiapp">手机APP下载</a>
+				<span>|</span>
+				<a href="###" id='denglu'>登录</a>
+				<span>|</span>
+				  <a href="###" id='zhuce'>注册</a>		
+			</ul>
+		</div>		
+	</div>
+	<div class="logo_search">
+		<div class="logo_search_cen">
+			<div class="logo">
+				<a href="index.html"><img src="img/log.png" width='240'></a>
+			</div>	
+			<div class="search">
+					<input type="text" placeholder="搜索您想要的车">
+					<a href="###">搜索</a>
+				
+			</div>
+			<div class="telephone">
+				<span><img src="img/tel.png"><i>400-877-9288</i></span>
+			</div>
+	
+		</div>
+	</div>
+	<!-- logo_search结束 -->
+
+	<div class="content">
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">首页</a><span></span></li>
+				<li><a href="buy_car.html">我要买车</a><span></span><b class='show'></b></li>
+				<li><a href="sell_car.html">我要卖车</a><span></span></li>
+				<li><a href="sun_renz.html">阳光认证</a><span></span></li>
+<li><a href="sun_Partner.html">连锁合伙人</a><span></span></li>
+			</ul>
+		</div>
+		<!-- menu 结束 -->
+		<!-- 车子列表排序 -->
+		<div class="car_nav_list">
+			<!-- 车子选项 -->
+			<div class="car_nav">
+				<div class="nav1">
+					<a href="index.html">首页</a>&gt;个人二手车
+				</div>
+					<!-- 车子选项列表 -->
+				<div class="nav_list">
+					<div class="pinpais">
+						<span>品牌：</span>
+						<a href="###" class='active3'>不限</a>
+						<a href="###">大众</a>
+						<a href="###">奔腾</a>
+						<a href="###">现代</a>
+						<a href="###">丰田</a>
+						<a href="###">奥迪</a>
+						<a href="###">日产</a>
+						<a href="###">五菱</a>
+						<a href="###">福特</a>
+						<a href="###">铃木</a>
+						<a href="###">马自达</a>
+						<a href="###">比亚迪</a>
+						<a href="###">本田</a>
+						<a href="###">奇瑞</a>
+						<a href="###">吉利</a>
+						<a href="###">雪佛兰</a>
+						<a href="###">东风风行</a>
+						<a href="###">起亚</a>
+						<a href="###">哈弗</a>
+						<a href="###">全部</a>
+					</div>
+					<div class="chexi">
+						<span>车系：</span>
+						<a href="###" class='active3'>不限</a>
+						<a href="###">捷达</a>
+						<a href="###">速腾</a>
+						<a href="###">宝来</a>
+						<a href="###">迈腾</a>
+						<a href="###">迈腾B70</a>
+						<a href="###">福克斯</a>
+						<a href="###">哈弗H6</a>
+						<a href="###">菱智</a>
+						<a href="###">高尔夫</a>
+						<a href="###">五菱宏光</a>
+						<a href="###">马自达6</a>
+						<a href="###">奔腾X80</a>
+						<a href="###">奔腾B50</a>
+						<a href="###">奥迪A6L</a>
+						<a href="###">科鲁兹</a>
+					</div>
+					<div class="jiage">
+						<span>价格：</span>
+						<a href="###" class='active3'>不限</a>
+						<a href="###"> 3万以下 </a>
+						<a href="###"> 3-5万 </a>
+						<a href="###"> 5-7万 </a>
+						<a href="###"> 7-9万 </a>
+						<a href="###"> 9-12万 </a>
+						<a href="###"> 12-16万 </a>
+						<a href="###"> 16-20万 </a>
+						<a href="###"> 20万以上 </a>
+						<input type="text"> -
+						<input type="text"> 万
+						<a href="###" class='shaixuan'>筛选</a>
+					</div>
+					<div class="car_age">
+						<span>车龄：</span>
+						<a href="###" class='active3'>不限</a>
+						<a href="###"> 5年以上 </a>
+						<a href="###"> 5年内 </a>
+						<a href="###"> 3年内 </a>
+						<a href="###"> 1年以内 </a>
+						<a href="###"></a>
+						<a href="###"></a>
+					</div>
+					<div id="more">
+						<span>更多：</span>
+						<dl href="###">
+							<dt>车型</dt>
+							<ul>
+								<li>不限</li>
+								<li> 两厢轿车 </li>
+								<li> 三厢轿车 </li>
+								<li> 跑车 </li>
+								<li> SUV </li>
+							</ul>
+						</dl>
+						<dl href="###">
+							<dt>座位</dt>
+							<ul>
+								<li>不限</li>
+								<li>2座</li>
+								<li>4座</li>
+								<li>5座</li>
+								<li>6座</li>
+								<li>7座以上</li>
+							</ul>
+						</dl>
+						<dl href="###">
+							<dt>行驶里程</dt>
+							<ul>
+								<li>不限</li>
+								<li>1万公里以内</li>
+								<li>3万公里以内</li>
+								<li>4万公里以内</li>
+								<li>5万公里以上</li>
+							</ul>
+						</dl>
+						<dl href="###">
+							<dt>变速箱</dt>
+							<ul>
+								<li>不限</li>
+								<li>手动</li>
+								<li>自动</li>
+								<li>半自动</li>
+							</ul>
+						</dl>
+						<dl href="###">
+							<dt>排量</dt>
+							<ul>
+								<li>不限</li>
+								<li>1.0L以下</li>
+								<li>1.0-1.6L</li>
+								<li>1.6-2.0L</li>
+								<li>2.0-3.0L</li>
+								<li>3.0以上L</li>
+							</ul>
+						</dl>
+						<dl href="###">
+							<dt>排放标准</dt>
+							<ul>
+								<li>不限</li>
+								<li>国二级以上</li>
+								<li>国三级以上</li>
+								<li>国四级以上</li>
+								<li>国五</li>
+							</ul>
+						</dl>
+						<dl href="###">
+							<dt>燃油类型</dt>
+							<ul>
+								<li>不限</li>
+								<li>汽油</li>
+								<li>柴油</li>
+								<li>电动</li>
+								<li>油电混合</li>
+								<li>其他</li>
+							</ul>		
+						</dl>
+						<dl href="###">
+							<dt class='color'><i></i>颜色</dt>
+							<ul>
+								<li>不限</li>
+								<li><i class='i1'></i>黑色</li>
+								<li><i class='i2'></i>白色</li>
+								<li><i class='i3'></i>银灰色</li>
+								<li><i class='i4'></i>红色</li>
+								<li><i class='i5'></i>深灰色</li>
+								<li><i class='i6'></i>橙色</li>
+								<li><i class='i7'></i>绿色</li>
+								<li><i class='i8'></i>蓝色</li>
+								<li><i class='i9'></i>咖啡色</li>
+								<li><i class='i10'></i>紫色</li>
+								<li><i class='i11'></i>香槟色</li>
+								<li><i class='i12'></i>多彩色</li>
+								<li><i class='i13'></i>黄色</li>
+								<li><i class='i14'></i>其他</li>							
+							</ul>
+						</dl>
+						<dl href="###">
+							<dt>国别</dt>
+							<ul>
+								<li>不限</li>
+								<li>德系</li>
+								<li>日系</li>
+								<li>美系</li>
+								<li>法系</li>
+								<li>韩系</li>
+								<li>国产</li>
+								<li>其他</li>
+							</ul>
+						</dl>
+					</div>
+				</div>
+				<!-- nav_list 结束 -->
+				<div class="now_screen">
+					当前筛选&gt;
+					<span><a href="###" class='selected'>大众</a>&nbsp;
+					<a href="###" class='reset'>重置</a></span>
+					<span>共为您找到<b>580</b>辆车</span>
+				</div>
+				<!-- 排序 -->
+				<div class="sort">
+					<ul>
+						<li class='moren'>默认排序</li>
+						<li>最新发布 </li>
+						<li class='price bjpic'> 价格<i></i></li>
+						<li class='age bjpic'> 车龄<i></i></li>
+						<li class='juli bjpic'> 里程<i></i></li>
+					</ul>
+			
+					<form action="">
+						<label><input type="checkbox">超值</label>
+						<label><input type="checkbox">急售</label>
+						<label><input type="checkbox">准新车</label>
+						<label><input type="checkbox" name='kqqg'>可迁全国</label>
+					</form>
+					<span>共找到<i>3430</i>辆</span>
+				</div>
+			</div>
+			<!-- 车子列表 -->
+			
+			<div class="car_list">
+				<div class='list'>
+					<a href="###" class='img_box'><img src="img/c0.jpg" alt=""></a>
+					<h3 class='name'><a href="###">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+				<div class='list'>
+					<a href="###" class='img_box'><img src="img/c2.jpg" alt=""></a>
+					<h3 class='name'><a href="###">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+				<div class='list'>
+					<a href="###" class='img_box'><img src="img/c3.jpg" alt=""></a>
+					<h3 class='name'><a href="###">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+				<div class='list'>
+					<a href="###" class='img_box'><img src="img/c8.jpg" alt=""></a>
+					<h3 class='name'><a href="###">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>	
+				<div class='list'>
+					<a href="###" class='img_box'><img src="img/carimg.jpg" alt=""></a>
+					<h3 class='name'><a href="###">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+					<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>
+				<div class='list'>
+						<a href="###" class='img_box'><img src="img/c5.jpg" alt=""></a>
+						<h3 class='name'><a href="###">奇瑞QQ3 2012款 QQ3 0.8 手动 梦想版</a></h3>
+						<p>2014年11月上牌 |  行驶2.4万公里  <span>石家庄</span> </p>
+					<p class='price'>2.10万 <b>3.40万</b></p>
+				</div>	
+
+			</div>
+				<!-- car_list 结束-->
+			<ul class='page'>
+				<li class='paged'>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<span class='add'>&gt;&gt;</span>
+			</ul>
+			
+		</div>
+		<!-- car_nav_list 车子列表排序结束-->
+		
+	</div>
+	<!-- content结束 -->
+
+		<!--~~~~~~~~~~~~~~~~~~下 面 是 所 有 页 面 内 容公 共 部 分	~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+				<!-- 售后 和 客服 -->
+		<div class="page_ending">
+			<div class="page_end_center">
+				<div class="shouhou">
+					<dl>
+						<dt>交易帮助</dt>
+						<dd><a href="about_buy_car_bz.html">买车帮助</a></dd>
+						<dd><a href="about_sell_car_bz.html">卖车帮助</a></dd>
+						<dd><a href="about_ghbz.html">过户帮助</a></dd>
+					</dl>
+					<dl>
+						<dt>关于我们</dt>
+						<dd><a href="about_gsjs.html">公司介绍</a></dd>
+						<dd><a href="about_qywh.html">企业文化</a></dd>
+						<dd><a href="about_gszz.html">公司资质</a></dd>
+					</dl>
+					<dl>
+						<dt>联系我们</dt>
+						<dd><a href="about_gfwx.html">官方微信</a></dd>
+						<dd><a href="http://weibo.com/p/1006066089613432/home?from=page_100606&mod=TAB&is_all=1#place">官方微博</a></dd>
+						<dd><a href="about_lxwm.html">联系我们</a></dd>
+					</dl>
+					<dl class='gf_app'>
+						<dd>下载官方APP</dd>
+						<dt id='xiazaiapp'><img src="img/snncarApp.png" alt=""></dt>
+					</dl>
+					<dl class='gf_wx'>
+						<dd>关注官方微信</dd>
+						<dt><img src="img/gf_wx.jpg" alt=""></dt>
+					</dl>
+				</div>
+				<div class="kefu">
+					<p class='tel'>400-877-9288</p>
+					<p class="time">周一至周日 8:00-18:00</p>
+					<p>免费咨询(咨询、建议、投诉)</p>
+					<a href="###">在线客服</a>
+				</div>
+			</div>
+			<!-- page_end_center 结束 -->
+		</div>
+			<!-- page_ending 结束 -->
+		<div class="footer">
+				Copyright © 2016-2017, snncar.com,All Rights Reserved 皖ICP备16022456号-1
+		</div>
+		<!-- 页面底部内容结束 -->
+<!-- 整个页面的大罩子 -->
+		<div id="cover"></div>
+		<!-- 登录注册的小框框 -->
+		<div id="login_register_box">
+			<ul>
+				<li class='login sele'>会员登录</li>
+				<li class='register'>会员注册</li>
+				<span class='close'>关闭</span>
+			</ul>
+					<!-- 账号登录框 -->
+			<div class="input_box login_box">
+				<form action="">
+					<div class="tel"><span>用户名<br/>(手机号)</span><input type="text" placeholder="请输入您的号码"></div>
+					<div class="password"><span>密码</span><input type="text" placeholder="请输入密码"></div>
+					<p><a href="###">忘记登录密码?</a></p>
+						<input type="submit" value='登&nbsp;&nbsp;录'>
+				</form>
+			</div>
+					<!-- 账号注册框 -->
+			<div class="input_box register_box">
+				<form action="">
+					<p><input type="text" placeholder="手机账号(登录账号)"></p>
+					<div class='pic_yanzhengma'>
+						<input type="text" placeholder="请输入图片验证码">
+						<div class="img_box"><img src="img/code.png" alt=""></div>
+					</div>
+					<div class="get_yanzhengma">
+						<input type="text" placeholder="请输入验证码">
+						<span>获取验证码</span>
+					</div>
+					<p class='nicheng'><input type="text" placeholder="请输入昵称"></p>
+					<p><input type="text" placeholder="输入密码(六位字符)"></p>
+					<p><input type="submit" value="立即注册"></p>
+				</form>
+			</div>
+		</div>
+
+<script src='js/about.js'></script>
+<script src='js/index.js'></script>
+
+<!-- 本身Ul li下拉 -->
+<script>
+//给每个dl设置电击事件
+$('#more dl').click(function(){
+	//让每个dl下面的ul显示
+	$(this).find('ul').slideDown(100);
+})	
+
+
+// 给每个li设置点击事件
+$('#more ul li').click(function(){
+	//给当前点击的li的父元素ul的兄弟元素的文本设置为当前正在点击的那个li的文本
+	$(this).parent('ul').siblings('dt').html($(this).html());
+	$(this).parent('ul').siblings('dt').css('margin-left','5px');
+})
+
+$('#more dl').mouseleave(function(){
+	$(this).find('ul').slideUp(300);
+})
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
